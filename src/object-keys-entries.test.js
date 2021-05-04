@@ -1,4 +1,10 @@
-import { getArrayOfKeysAndValues, getFilteredKey, sortedArraysByValuesLength, sortedKeys } from './object-keys-entries.js';
+import { capitalizeObjectKeys, getArrayOfKeysAndValues, getFilteredKey, sortedArraysByValuesLength, sortedKeys } from './object-keys-entries.js';
+
+test('it capitalizes the keys', () => {
+  const dataObject = { name: 'Angelina Jolie', age: 80 }; //arrange
+  const output = capitalizeObjectKeys(dataObject); //act
+  expect(output).toEqual(['NAME', 'AGE']); //assert
+});
 
 test('sortedKeys', () => {
   const dataObject = { name: 'Spot', age: 3, isDog: true, friends: ['Rover', 'Steve', 'Fluffy'] }; //arrange
