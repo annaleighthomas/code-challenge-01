@@ -37,28 +37,30 @@ test('howMuchPencil should return a list of shortening words', () => {
   expect(howMuchPencil('abc')).toStrictEqual(['abc', 'bc', 'c', '']);
 });
 
-// test('wordsToCharList should return a list of characters', () => {
-//   expect(wordsToCharList('Gregor')).toStrictEqual(['G', 'r', 'e', 'g', 'o', 'r']);
-//   expect(wordsToCharList('Gregor').length).toStrictEqual(6);
-//   expect(wordsToCharList('hooray')).toStrictEqual(['h', 'o', 'o', 'r', 'a', 'y']);
-//   expect(wordsToCharList('')).toStrictEqual([]);
-// });
-// test('listFoods should return array of ingredients without their amounts', () => {
-//   expect(listFoods(gruffaloCrumble)).toStrictEqual(['Gruffalo', 'oats', 'brown sugar', 'flour', 'pure maple syrup', 'chopped nuts', 'baking soda', 'baking powder', 'cinnamon', 'melted butter', 'fresh water']);
-// });
+test('wordsToCharList should return a list of characters', () => {
+  expect(wordsToCharList('Gregor')).toStrictEqual(['G', 'r', 'e', 'g', 'o', 'r']);
+  expect(wordsToCharList('Gregor').length).toStrictEqual(6);
+  expect(wordsToCharList('hooray')).toStrictEqual(['h', 'o', 'o', 'r', 'a', 'y']);
+  expect(wordsToCharList('')).toStrictEqual([]);
+});
 
-// test('stepActions should return array of actions for each step', () => {
-//   expect(stepActions(gruffaloCrumble)).toStrictEqual(['Pre-heat', 'De-prickle', 'Sprinkle', 'Mix', 'Grease', 'Combine', 'Fold', 'Spread', 'Bake']);
-// });
 
-// test('removeLastCharacters', () => {
-//   expect(removeLastCharacters('Gregor', 2)).toStrictEqual('Greg');
-//   expect(removeLastCharacters('hello', -1)).toStrictEqual('hello');
-//   expect(removeLastCharacters('wowow', -700)).toStrictEqual('wowow');
-//   expect(removeLastCharacters('hello', 12)).toStrictEqual('');
-//   expect(removeLastCharacters('', 1)).toStrictEqual('');
-//   expect(removeLastCharacters('a', 1)).toStrictEqual('');
-// });
+test('listFoods should return array of ingredients without their amounts', () => {
+  expect(listFoods(gruffaloCrumble)).toStrictEqual(['Gruffalo', 'oats', 'brown sugar', 'flour', 'pure maple syrup', 'chopped nuts', 'baking soda', 'baking powder', 'cinnamon', 'melted butter', 'fresh water']);
+});
+
+test('stepActions should return array of actions for each step', () => {
+  expect(stepActions(gruffaloCrumble)).toStrictEqual(['Pre-heat', 'De-prickle', 'Sprinkle', 'Mix', 'Grease', 'Combine', 'Fold', 'Spread', 'Bake']);
+});
+
+test('removeLastCharacters', () => {
+  expect(removeLastCharacters('Gregor', 2)).toStrictEqual('Greg');
+  expect(removeLastCharacters('hello', -1)).toStrictEqual('hello');
+  expect(removeLastCharacters('wowow', -700)).toStrictEqual('wowow');
+  expect(removeLastCharacters('hello', 12)).toStrictEqual('');
+  expect(removeLastCharacters('', 1)).toStrictEqual('');
+  expect(removeLastCharacters('a', 1)).toStrictEqual('');
+});
 
 // // stretch goals
 // test('totalSumCSV', () => {

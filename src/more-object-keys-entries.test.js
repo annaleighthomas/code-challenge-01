@@ -1,10 +1,10 @@
-import { getHouses, updateNumbers, totalCharacters, hasChildrenEntries, sortByChildren } from './more-object-keys-entries.js';
+import { getHouses, updateNumbers, totalCharacters, hasChildrenEntries, sortByChildren, num } from './more-object-keys-entries.js';
 
 const characters = [
   {
-    name: 'Eddard',
-    spouse: 'Catelyn',
-    children: ['Robb', 'Sansa', 'Arya', 'Bran', 'Rickon'],
+    name: 'Eddard', 
+    spouse: 'Catelyn', 
+    children: ['Robb', 'Sansa', 'Arya', 'Bran', 'Rickon'], 
     house: 'Stark'
   },
   {

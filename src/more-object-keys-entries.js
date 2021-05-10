@@ -19,23 +19,21 @@ export function updateNumbers(obj) {
   return arr;
 }
 
-export function totalCharacters(arr) {
-  let characters = 0;
-
-  arr.forEach(family => {
-    Object.keys(family).forEach(property => {
-
-      const value = family[property];
-
-      if (property !== 'house' && property !== 'children') {
-
-        if (value) characters++;
+export function totalCharacters(characters) {
+  let count = 0;
+  for (let character of characters) {
+    for (let key of Object.keys(character)) {
+      if (key === 'name') {
+        count++;
+      } if (key === 'spouse') {
+        if (character[key] !== null)
+          count ++;
+      } if (key === 'children') {
+        count = count + character[key].length;
       }
-      if (property === 'children') value.forEach(child => characters++);
-    });
-  });
-
-  return characters;
+    }
+  }
+  return count;
 }
 
 export function hasChildrenEntries(arr, character) {
@@ -58,3 +56,4 @@ export function sortByChildren(arr){
     return (a.name < b.name);
   });
 } 
+
