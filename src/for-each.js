@@ -5,12 +5,20 @@ export function returnTen(string) {
   
     return splitString;
   }
- 
 }
 
-// export function findMax(matrix) {
+export function findMax(matrix) {
+  let greatestNumber = -1;
+  for (let array of matrix){
+    for (let num of array) {
+      if (num > greatestNumber) {
+        greatestNumber = num;
+      }
+    }
+    return greatestNumber;
+  }
     
-// }
+}
 
 // export function totalSum(matrix) {
     
