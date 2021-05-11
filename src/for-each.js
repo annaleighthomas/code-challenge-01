@@ -1,5 +1,11 @@
-export function returnTen(str) {
-    
+export function returnTen(string) {
+  for (let i = 0; i < string.length; i++) {
+    const firstTenChar = string.substr(string.length - 10, string.length);
+    const splitString = firstTenChar.split('');
+  
+    return splitString;
+  }
+ 
 }
 
 // export function findMax(matrix) {
