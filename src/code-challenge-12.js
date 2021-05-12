@@ -11,9 +11,13 @@ export function toLastNames(people) {
 };
 
 export function addValues(array) {
-  return array.reduce((a, b) => a + b);
+  return array.reduce((currentTotal, currentNum) => currentTotal + currentNum);
 }
 
 export function addPurchases(array) {
   return array.reduce((a, b) => a.purchasePrice + b.purchasePrice);
+};
+
+export function countNumberOfElements(array) {
+  return array.reduce((total) => total + 1, 0);
 };

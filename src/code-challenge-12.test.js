@@ -1,4 +1,4 @@
-import { toLastNames, addValues, addPurchases } from './code-challenge-12.js';
+import { toLastNames, addValues, addPurchases, countNumberOfElements } from './code-challenge-12.js';
 
 test('to last names', () => {
   const input = [{ firstName: 'Jane', lastName:'Doe' }, { firstName:'James', lastName:'Bond'}];
@@ -18,5 +18,12 @@ test('find the total amount purchased', () => {
   const input = [{ item: 'sandwich', purchasePrice: 10 }, { item: 'redbull', purchasePrice: 3 }];
   const output = addPurchases(input);
   const expected = 13;
+  expect(output).toEqual(expected);
+});
+
+test('count the number of elements', () => {
+  const input = ['apple', 'banana', 'pear', 'mango'];
+  const output = countNumberOfElements(input);
+  const expected = 4;
   expect(output).toEqual(expected);
 });
