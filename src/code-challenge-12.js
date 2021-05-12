@@ -9,3 +9,7 @@ export function toLastNames(people) {
   });
 
 };
+
+export function addValues(array) {
+  return array.reduce((a, b) => a + b);
+}
