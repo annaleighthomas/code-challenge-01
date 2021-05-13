@@ -5,3 +5,12 @@ export function sortByChildren(array) {
     return (a.name < b.name);
   });
 }
+
+export function containsW(str) {
+  if (/w/g.test(str)) {
+    return true;
+  }
+  else {
+    return false;
+  }
+};
