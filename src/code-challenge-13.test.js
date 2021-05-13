@@ -60,15 +60,16 @@ describe('Testing challenge 2', () => {
   });
 });
 
-// describe('Testing challenge 3', () => {
-//   test('It should return true if it has a number', () => {
-//     expect(isNum(1234567890)).toStrictEqual(true);
-//     expect(isNum('12345')).toStrictEqual(true);
-//     expect(isNum('h3llo w0rld')).toStrictEqual(true);
-//     expect(isNum('hello world')).toStrictEqual(false);
-//     expect(isNum('')).toStrictEqual(false);
-//   });
-// });
+describe('Testing challenge 3', () => {
+  test('It should return true if it has a number', () => {
+    expect(isNum(1234567890)).toStrictEqual(true);
+    expect(isNum('12345')).toStrictEqual(true);
+    expect(isNum('h3llo w0rld')).toStrictEqual(true);
+    expect(isNum('hello world')).toStrictEqual(false);
+    expect(isNum('')).toStrictEqual(false);
+  });
+});
+
 // describe('Testing challenge 4', () => {
 //   test('It should return true if it has world, case sensitive', () => {
 //     expect(containsWorld('hello world')).toStrictEqual(true);

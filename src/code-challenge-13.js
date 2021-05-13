@@ -6,8 +6,19 @@ export function sortByChildren(array) {
   });
 }
 
+//i watched a long video on regex that didnt really explain anything useful
+
 export function containsW(str) {
   if (/w/g.test(str)) {
+    return true;
+  }
+  else {
+    return false;
+  }
+};
+
+export function isNum(input) {
+  if (/[0-9]/g.test(input)) {
     return true;
   }
   else {
