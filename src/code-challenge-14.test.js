@@ -6,12 +6,12 @@ describe('Challenge 1', () => {
   });
 });
 
-// describe('Challenge 2', () => {
-//   test('It should return true if pin is 4 digits', () => {
-//     expect(validatePin('1234')).toStrictEqual(true);
-//     expect(validatePin('123')).toStrictEqual(false);
-//   });
-// });
+describe('Challenge 2', () => {
+  test('It should return true if pin is 4 digits', () => {
+    expect(validatePin('1234')).toStrictEqual(true);
+    expect(validatePin('123')).toStrictEqual(false);
+  });
+});
 
 // describe('Challenge 3', () => {
 //   test('It should return true if word is between 5-10 characters', () => {

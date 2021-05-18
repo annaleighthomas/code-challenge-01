@@ -1,14 +1,18 @@
 export const replaceZeroes = (string) => {
   const regex = /0/mg;
   const subst = `zero`;
-return string.replace(regex, subst);
+  return string.replace(regex, subst);
 
 
 };
 
-// const validatePin = (pin) => {
-//   //<solution>
-// };
+export function validatePin(pin) {
+  if (pin.match(/\d{4}$/gm)) {
+    return true;
+  } else {
+    return false;
+  }
+};
 
 // const validateWord = (word) => {
 //   //<solution>
