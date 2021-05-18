@@ -13,13 +13,13 @@ describe('Challenge 2', () => {
   });
 });
 
-// describe('Challenge 3', () => {
-//   test('It should return true if word is between 5-10 characters', () => {
-//     expect(validateWord('hello')).toStrictEqual(true);
-//     expect(validateWord('beautiful')).toStrictEqual(true);
-//     expect(validateWord('hell')).toStrictEqual(false);
-//   });
-// });
+describe('Challenge 3', () => {
+  test('It should return true if word is between 5-10 characters', () => {
+    expect(validateWord('hello')).toStrictEqual(true);
+    expect(validateWord('beautiful')).toStrictEqual(true);
+    expect(validateWord('hell')).toStrictEqual(false);
+  });
+});
 
 
 // describe('Challenge 4', () => {

@@ -14,9 +14,13 @@ export function validatePin(pin) {
   }
 };
 
-// const validateWord = (word) => {
-//   //<solution>
-// };
+export const validateWord = (word) => {
+  if (word.match(/^[a-zA-Z]{5,10}$/)) {
+    return true;
+  } else {
+    return false;
+  }
+};
 
 // const hasNumber = (string) => {
 //   //<solution>
