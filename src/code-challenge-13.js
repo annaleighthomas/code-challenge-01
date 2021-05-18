@@ -25,3 +25,16 @@ export function isNum(input) {
     return false;
   }
 };
+
+// const containsWorld = (input) => {
+
+// };
+
+
+// const isCapitalized = (str) => {
+
+// };
+
+// const citiesAtoJ = (arr) => {
+
+// };
