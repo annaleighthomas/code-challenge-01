@@ -1,5 +1,8 @@
-const replaceZeros = (string) => {
-  //<solution>
+export const replaceZeroes = (string) => {
+  const regex = /0/mg;
+  const subst = `zero`;
+return string.replace(regex, subst);
+
 
 };
 
